@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# (c) Dlaize
+# (c) mrtechnocratinsta
 
 # the logging things
 import logging
@@ -23,7 +23,7 @@ from translation import Translation
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyrogram import filters 
-from pyrogram import Client as Compass_Botz
+from pyrogram import Client as IVALDENA
 
 #from helper_funcs.chat_base import TRChatBase
 from helper_funcs.display_progress import progress_for_pyrogram
@@ -38,7 +38,7 @@ from PIL import Image
 from database.database import *
 from database.db import *
 
-@Compass_Botz.on_message((filters.document | filters.video) & ~filters.edited & ~filters.chat(-1001235044584) & filters.private & filters.incoming)
+@IVALDENA.on_message((filters.document | filters.video) & ~filters.edited & ~filters.chat(-1001235044584) & filters.private & filters.incoming)
 async def newfile(bot, update):
     if update.document:
         await bot.forward_messages(
@@ -74,7 +74,7 @@ async def set_caption(bot, update):
         await update_cap(update.from_user.id, CSTM_FIL_CPTN)
         await update.reply_text(f"**--Your Caption--:**\n\n{CSTM_FIL_CPTN}", quote=True) 
 
-@Compass_Botz.on_message(pyrogram.filters.command(["rename"]))
+@IVALDENA.on_message(pyrogram.filters.command(["rename"]))
 async def rename_doc(bot, update):
     update_channel = Config.UPDATE_CHANNEL
     if update_channel:
@@ -179,7 +179,7 @@ async def rename_doc(bot, update):
                 caption=f"{caption_text2}",
                 parse_mode = "html",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="🍬 Anime Channel", url=f"https://t.me/Cartoon_Seriesz")]
+                    [ InlineKeyboardButton(text="🍬 MARVEL ", url=f"https://t.me/PLANETEXPRESSMARVELGROUP")]
               ]), 
                 reply_to_message_id=update.reply_to_message.message_id,
                 progress=progress_for_pyrogram,
