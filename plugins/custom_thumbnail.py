@@ -21,7 +21,7 @@ from PIL import Image
 from database.database import *
 
 
-@Compass_Botz.on_message(filters.photo)
+@IVALDENA.on_message(filters.photo)
 async def save_photo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -87,7 +87,7 @@ async def delete_thumbnail(bot, update):
     )
 
 
-@Compass_Botz.on_message(filters.command(["showthumb"]))
+@IVALDENA.on_message(filters.command(["showthumb"]))
 async def show_thumb(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
