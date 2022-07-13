@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Dlaize
+# (c) mrtechnocratinsta
 
 # the logging things
 import logging
@@ -39,7 +39,7 @@ from database.database import *
 from database.db import *
 
 
-@Compass_Botz.on_message(pyrogram.filters.command(["help"]))
+@IVALDENA.on_message(pyrogram.filters.command(["help"]))
 async def help_user(bot, update):
     # logger.info(update)
     #TRChatBase(update.from_user.id, update.text, "/help")
@@ -81,7 +81,7 @@ async def help_user(bot, update):
     )       
 
 
-@Compass_Botz.on_message(pyrogram.filters.command(["start"]))
+@IVALDENA.on_message(pyrogram.filters.command(["start"]))
 async def text(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await update.reply_text("You are Banned")
@@ -110,8 +110,8 @@ async def text(bot, update):
                         InlineKeyboardButton("❗ Help", callback_data = "ghelp")
                 ],
                 [
-                    InlineKeyboardButton('🏆 Support Channel', url='https://t.me/Compass_Botz'),
-                    InlineKeyboardButton('💬 Feedback', url='https://t.me/Dlaize')
+                    InlineKeyboardButton('🤩 Channel', url='https://t.me/IVALDENA'),
+                    InlineKeyboardButton(' SERIES GROUP', url='https://t.me/PLANETEXPRESSSERIESGROUP)
                 ]
             ]
         ),
@@ -121,7 +121,7 @@ async def text(bot, update):
 
             
 @Compass_Botz.on_callback_query()
-async def cb_handler(client: Compass_Botz , query: CallbackQuery):
+async def cb_handler(client: IVALDENA, query: CallbackQuery):
     data = query.data
     if data == "rnme":
         await query.message.edit_text(
