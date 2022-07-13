@@ -1,5 +1,5 @@
 
-<h1 align="center"><b>Sharingan Rename Bot</b></h1>
+<h1 align="center"><b>IVALDENASharingan Rename Bot</b></h1>
 
 <h4 align="center">A Telegram File Renamer Bot With Permanent Thumbnail Support <br> Also It Can Convert Files Into Video!!</h4>
 
@@ -28,7 +28,7 @@ An Multi purpose Bot Which Can :-
 
 ### 🚀 Heroku Deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dakshkohli23/Sharingan-Rename-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dynopranth/IVALDENASharingan-Rename-Bot)
 
 If you Find Any Bugs Or Want to Give Your Feedbacks Then Kindly Contact Us Through [Telegram ](https://telegram.dog/Dlaize) 
 Also Support Our Channel [Compass Bots](https://telegram.dog/compass_botz) 
